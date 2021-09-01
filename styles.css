@@ -28,12 +28,21 @@ h3 {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     color: hsl(210, 4%, 67%);
+    font-size: 18px;
 }
 
     .learn {
         font-family: "Fraunces", serif;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .graphic-text {
+        color: hsl(167, 40%, 24%);
+    }
+
+    .photo-text {
+        color: hsl(198, 62%, 26%);
     }
 
 .wrapper {
@@ -80,11 +89,35 @@ h3 {
     margin: 2.5rem;
     /* justify-content: center; */
 }
+    .testimony img {
+        border-radius: 6rem;
+        width: 30%;
+        height: auto;
+    }
 
 .testimonial-container {
     display: flex;
     justify-content: center;
 }
+
+    .testi-text {
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        color: hsl(213, 9%, 39%);
+    }
+
+    .testi-name {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+    }
+
+    .testi-job {
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        color: hsl(210, 4%, 67%);
+
+    }
+
 
 .photo-container1 {
     display: flex;
