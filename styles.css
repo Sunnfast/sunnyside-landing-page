@@ -18,14 +18,32 @@ body {
     overflow: hidden;
 }
 
-#square1 {
-    grid-column: 1 / span 2;   
-    
-}
 
-    #header-image {
-        position: absolute;
+    #square1 {
+        grid-column: 1 / span 2;
+        background: url(assets/desktop/image-header.jpg);
+        background-size: cover;
         
+    }
+
+    #egg {
+        background:url(assets/desktop/image-transform.jpg);
+        background-size: cover;
+    }
+
+    #pinkcup {
+        background: url(assets/desktop/image-stand-out.jpg);
+        background-size: cover;
+    }
+
+    #cherry {
+        background: url(assets/desktop/image-graphic-design.jpg);
+        background-size: cover;
+    }
+
+    #peach {
+        background: url(assets/desktop/image-photography.jpg);
+        background-size: cover;
     }
 
 #testimonials {
