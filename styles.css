@@ -14,11 +14,12 @@ h1 {
     font-family: "Fraunces", serif;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: var(--white);
+    font-size: 36px;
 
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 3rem;
     
 }
 
@@ -36,7 +37,7 @@ nav {
 
 .navbar-link {
     list-style: none;
-    padding: 1.5rem;
+    padding: 2rem;
     font-size: 18px;
 }
 
@@ -63,6 +64,19 @@ h3 {
         text-transform: uppercase;
         margin-top: 3rem;
     }
+
+        .learn a {
+            /* background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, hsl(51, 100%, 49%) 50%);
+            background-position: -0% 0;
+            background-size: 200% auto; */
+            color: #222;
+            text-decoration: none;
+            /* transition: background-position 0.5s ease-out; */
+        }
+
+            /* .learn a:hover {
+                background-position: -99.99% 0;
+            } */
 
     .graphic-text {
         color: hsl(167, 40%, 24%);
