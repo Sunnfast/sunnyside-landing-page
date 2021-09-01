@@ -61,6 +61,7 @@ h3 {
         font-family: "Fraunces", serif;
         font-weight: 700;
         text-transform: uppercase;
+        margin-top: 3rem;
     }
 
     .graphic-text {
@@ -86,6 +87,32 @@ h3 {
         background-size: cover;
         
     }
+
+    .transform-text {
+        font-size: 18px;
+        margin: 6rem;
+        margin-top: 12rem;
+        line-height: 1.75rem;
+    }
+
+        .transform-text h2{
+            font-size: 36px;
+            margin-right: 9rem;
+            line-height: 2.5rem;
+        }
+
+    .standout-text {
+        font-size: 18px;
+        margin: 6rem;
+        margin-top: 12rem;
+        line-height: 1.75rem;
+    }
+
+        .standout-text h2 {
+            font-size: 36px;
+            margin-right: 4rem;
+            line-height: 2.5rem;
+        }
 
     #egg {
         background:url(assets/desktop/image-transform.jpg);
