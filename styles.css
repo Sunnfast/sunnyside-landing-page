@@ -76,7 +76,11 @@ nav {
                 color: white;
             }
 
-          
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}      
 
 h2 {
     font-family: "Fraunces", serif;
