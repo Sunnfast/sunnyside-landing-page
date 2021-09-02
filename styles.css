@@ -325,3 +325,13 @@ footer {
         width: 2%;
         height: auto;
     }
+
+
+.social-icon {
+   fill: #2C7566;
+}
+
+    .social-icon:hover {
+        fill: #FFF;
+    }
+
