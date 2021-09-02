@@ -45,7 +45,6 @@ nav {
     list-style: none;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
     font-size: 18px;
 }
 
@@ -53,6 +52,31 @@ nav {
         text-decoration: none;
         color:hsl(0, 0%, 100%)
     }
+
+    .navbar li {
+        list-style-type: none;
+    }
+
+        #contact-btn {
+            cursor: pointer;
+            font-family: "Fraunces", serif;
+            list-style: none;
+            text-transform: uppercase;
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            list-style-type: none;
+            border: none;
+            
+        }
+
+
+            #contact-btn:hover {
+                background: #6eceff;
+                color: white;
+            }
+
+          
 
 h2 {
     font-family: "Fraunces", serif;
@@ -281,7 +305,7 @@ h3 {
     .links a {
         padding: 1rem;
         text-decoration: none;
-        color:hsl(167, 40%, 24%);
+        color:hsl(168, 34%, 41%);
     }
 
     .links a:hover {
@@ -318,6 +342,7 @@ footer {
     margin: 1rem;
     z-index: 3;
     position: relative;
+    align-items: center;
 }
     .social-media img {
         margin-top: 4rem;
@@ -329,9 +354,25 @@ footer {
 
 .social-icon {
    fill: #2C7566;
+   padding: 1rem;
 }
 
     .social-icon:hover {
         fill: #FFF;
     }
 
+.attribution {
+    font-family: "Barlow", serif;
+    font-size: 14px;
+    background: hsl(198, 62%, 26%);
+    color: white;
+    text-align: center;
+}
+
+    .attribution a {
+        text-decoration: none;
+        color: rgb(189, 188, 188);
+    }
+    .attribution a:hover {
+        color: hsl(168, 34%, 41%);
+    }
