@@ -110,9 +110,32 @@ h3 {
             /* transition: background-position 0.5s ease-out; */
         }
 
-            /* .learn a:hover {
-                background-position: -99.99% 0;
-            } */
+        .yellow-accent {
+            display: inline-block;
+            position: relative;
+
+        }
+
+            .yellow-accent::after {
+                z-index: -2;
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 10px;
+                bottom: 1.25rem;
+                left: -0.5rem;
+                background-color: hsl(51, 100%, 49%);
+                transform-origin: bottom right;
+                transition: transform 0.5s ease-in-out;
+                border-radius: 2rem;
+                padding: 0 0.5rem;
+            }
+
+            .yellow-accent:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
 
     .graphic-text {
         color: hsl(167, 40%, 24%);
