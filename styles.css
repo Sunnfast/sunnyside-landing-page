@@ -30,19 +30,22 @@ h1 {
 nav {
     font-family: "Barlow", sans-serif;
     color:hsl(0, 0%, 100%);
-    padding: 3rem;
-    padding-top: 0.5rem;
+    padding: 1rem;
     
 }
 
 .navbar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
 }
 
 .navbar-link {
     list-style: none;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     font-size: 18px;
 }
 
@@ -94,7 +97,7 @@ h3 {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr auto 1fr; 
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr auto auto; 
     /* grid-template-columns: repeat(2, 1fr) */
     overflow: hidden;
 }
@@ -107,6 +110,17 @@ h3 {
         background-position: center;
         
     }
+
+    .top-logo {
+        display: flex;
+        width: 25%;
+        position: absolute;
+    }
+
+        .top-logo img {
+            width: 40%;
+            padding: 2rem;
+        }
 
     .transform-text {
         font-size: 18px;
@@ -237,9 +251,7 @@ h3 {
     grid-column: 1 / 2;
     /* height: 100%; */
     width: auto;
-}
-
-    
+}  
 
 .photo-container2 {
     grid-row-start: 7;  
@@ -280,6 +292,19 @@ footer {
     background-color: var(--lightGreen);
 }
 
+
+.bot-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+    .bot-logo img {
+        width: 15%;
+    }
+
+
  img {/*
     z-index: -1;
     object-fit: cover;
@@ -295,5 +320,8 @@ footer {
     position: relative;
 }
     .social-media img {
-        margin: 1rem;
+        margin-top: 4rem;
+        padding: 1rem;
+        width: 2%;
+        height: auto;
     }
