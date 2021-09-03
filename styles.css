@@ -102,12 +102,8 @@ h3 {
     }
 
         .learn a {
-            /* background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, hsl(51, 100%, 49%) 50%);
-            background-position: -0% 0;
-            background-size: 200% auto; */
             color: #222;
             text-decoration: none;
-            /* transition: background-position 0.5s ease-out; */
         }
 
         .yellow-accent {
@@ -174,9 +170,9 @@ h3 {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr auto auto; 
+    grid-template-rows:  1fr 1fr 1fr auto auto auto auto; 
     /* grid-template-columns: repeat(2, 1fr) */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -333,7 +329,7 @@ h3 {
 .photo-container2 {
     grid-row-start: 7;  
     display: flex;
-    /* height: 100%; */
+    height: 100%; /*warps image slightly temporary bug fix */
     width: auto;
 }
 
@@ -386,7 +382,8 @@ footer {
     z-index: -1;
     object-fit: cover;
     */
-    width: 50%;
+    width: 100%;
+    max-width: 720px;
     height: auto;
 } 
 .social-media {
@@ -429,3 +426,59 @@ footer {
     .attribution a:hover {
         color: hsl(168, 34%, 41%);
     }
+
+@media (max-width: 1080px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows:  2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+        .square {
+            grid-column: 1;
+        }
+
+        #egg {
+            grid-row: 2;
+            max-height: 650px;
+            min-height: 412px;
+            height: auto;
+            width: 100vw;
+        }
+        
+
+        #tranform-square {
+            grid-row: 3;
+        }
+
+            .transform-text {
+                text-align: center;
+            }
+
+            #tranform-header {
+                text-align: center;
+                margin: 2rem;
+                margin-right: 2rem
+            }
+
+        #pinkcup {
+            grid-row: 4;
+            max-height: 650px;
+            min-height: 412px;
+            height: auto;
+        }
+          
+}
+
+@media (max-width: 730px) {
+    /* .egg {
+        height: ;
+    } */
+
+    #egg {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
