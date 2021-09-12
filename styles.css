@@ -164,14 +164,14 @@ h3 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
   /* grid-template-columns: repeat(2, 1fr) */
   /* overflow: hidden; */
 }
 
 #square1 {
   grid-column: 1 / span 2;
-  background: url(assets/desktop/image-header.jpg);
+  background: url(assets/desktop/image-header.jpg) center bottom;
   background-size: cover;
   background-position: center;
 }
@@ -215,17 +215,17 @@ h3 {
 }
 
 #egg {
-  background: url(assets/desktop/image-transform.jpg);
+  background: url(assets/desktop/image-transform.jpg) center;
   background-size: cover;
 }
 
 #pinkcup {
-  background: url(assets/desktop/image-stand-out.jpg);
+  background: url(assets/desktop/image-stand-out.jpg) center;
   background-size: cover;
 }
 
 #cherry {
-  background: url(assets/desktop/image-graphic-design.jpg);
+  background: url(assets/desktop/image-graphic-design.jpg) center;
   background-size: cover;
 }
 
@@ -243,7 +243,7 @@ h3 {
 }
 
 #peach {
-  background: url(assets/desktop/image-photography.jpg);
+  background: url(assets/desktop/image-photography.jpg) center top;
   background-size: cover;
 }
 
@@ -456,12 +456,47 @@ img {
 }
 
 @media (max-width: 730px) {
-  /* .egg {
-        height: ;
-    } */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr auto auto auto auto;
+  }
+
+  #square1 {
+    background: url(assets/mobile/image-header.jpg) center bottom;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+  }
 
   #egg {
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url(assets/mobile/image-transform.jpg) center;
+    background-size: cover;
+    width: 100vw;
+    /* height: auto; */
+  }
+
+  #pinkcup {
+    background: url(assets/mobile/image-stand-out.jpg) center;
+    background-size: cover;
+  }
+
+  #cherry {
+    background: url(assets/mobile/image-graphic-design.jpg) center top;
+    background-size: cover;
+  }
+
+  #peach {
+    background: url(assets/mobile/image-photography.jpg) center top;
+    background-size: cover;
+  }
+
+  .square {
+    width: 100vw;
+    height: auto;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
   }
 }
