@@ -46,6 +46,10 @@ nav {
   font-size: 18px;
 }
 
+.hamburger {
+  display: none;
+}
+
 .navbar-link a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
@@ -463,6 +467,12 @@ img {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+
+  .hamburger {
+    position: absolute;
+    display: block;
+    right: 2rem;
   }
 
   h1 {
