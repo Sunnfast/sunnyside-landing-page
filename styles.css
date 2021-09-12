@@ -19,7 +19,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--white);
-  font-size: 54px;
+  font-size: 5vw;
+  max-width: fit-content;
 
   text-align: center;
   margin-top: 0.5rem;
@@ -164,14 +165,14 @@ h3 {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: 1fr 0.5fr auto auto auto auto auto;
   /* grid-template-columns: repeat(2, 1fr) */
   /* overflow: hidden; */
 }
 
 #square1 {
   grid-column: 1 / span 2;
-  background: url(assets/desktop/image-header.jpg) center bottom;
+  background: url(assets/desktop/image-header.jpg) center top;
   background-size: cover;
   background-position: center;
 }
@@ -183,7 +184,6 @@ h3 {
 }
 
 .top-logo img {
-  width: 40%;
   padding: 2rem;
 }
 
@@ -418,13 +418,16 @@ img {
   .wrapper {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh auto auto auto auto auto auto auto auto;
   }
 
   .square {
     grid-column: 1;
   }
 
+  #square1 {
+    height: 100vh;
+  }
   #egg {
     grid-row: 2;
     max-height: 650px;
@@ -458,8 +461,27 @@ img {
 @media (max-width: 730px) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+
+  h1 {
+    padding-top: 8rem;
+    font-size: 10vw;
+    padding-bottom: 4rem;
+  }
+
+  .top-logo img {
+    width: 40vw;
+  }
+
+  .arrow {
+    margin-top: 0;
+    padding-bottom: 10rem;
+  }
+
+  .navbar {
+    display: none;
   }
 
   #square1 {
@@ -476,6 +498,31 @@ img {
     /* height: auto; */
   }
 
+  .transform-text {
+    font-size: 8vw;
+    margin: 1.25rem;
+  }
+
+  .transform-text h2 {
+    font-size: 8vw;
+    padding-top: 1.5rem;
+  }
+
+  .learn {
+    font-size: 5vw;
+  }
+
+  .standout-text {
+    text-align: center;
+    font-size: 8vw;
+    margin: 1.25rem;
+  }
+
+  .standout-text h2 {
+    margin-right: 0;
+    padding-top: 1.5rem;
+  }
+
   #pinkcup {
     background: url(assets/mobile/image-stand-out.jpg) center;
     background-size: cover;
@@ -486,9 +533,31 @@ img {
     background-size: cover;
   }
 
+  .cherry-text {
+    padding-top: 5rem;
+    margin: 0.75rem;
+    margin-top: 18rem;
+    padding-bottom: 2rem;
+  }
+
+  .cherry-text h3 {
+    font-size: 4vw;
+  }
+
   #peach {
     background: url(assets/mobile/image-photography.jpg) center top;
     background-size: cover;
+  }
+
+  .peach-text {
+    padding-top: 5rem;
+    margin: 1rem;
+    margin-top: 18rem;
+    padding-bottom: 2rem;
+  }
+
+  .peach-text h3 {
+    font-size: 4vw;
   }
 
   .square {
@@ -498,5 +567,14 @@ img {
 
   .testimonial-container {
     flex-direction: column;
+  }
+
+  #testimonials h2 {
+    margin-top: 4rem;
+    font-size: 4vw;
+  }
+
+  .testimony {
+    padding: 2rem;
   }
 }
