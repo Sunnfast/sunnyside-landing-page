@@ -13,6 +13,12 @@ body {
   margin: 0;
 }
 
+.hero-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -176,7 +182,7 @@ h3 {
 
 #square1 {
   grid-column: 1 / span 2;
-  background: url(assets/desktop/image-header.jpg) center top;
+  background: url(../assets/desktop/image-header.jpg) center top;
   background-size: cover;
   background-position: center;
 }
@@ -219,17 +225,17 @@ h3 {
 }
 
 #egg {
-  background: url(assets/desktop/image-transform.jpg) center;
+  background: url(../assets/desktop/image-transform.jpg) center;
   background-size: cover;
 }
 
 #pinkcup {
-  background: url(assets/desktop/image-stand-out.jpg) center;
+  background: url(../assets/desktop/image-stand-out.jpg) center;
   background-size: cover;
 }
 
 #cherry {
-  background: url(assets/desktop/image-graphic-design.jpg) center;
+  background: url(../assets/desktop/image-graphic-design.jpg) center;
   background-size: cover;
 }
 
@@ -247,7 +253,7 @@ h3 {
 }
 
 #peach {
-  background: url(assets/desktop/image-photography.jpg) center top;
+  background: url(../assets/desktop/image-photography.jpg) center top;
   background-size: cover;
 }
 
