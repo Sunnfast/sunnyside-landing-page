@@ -1,14 +1,7 @@
-:root {
-  --teal: #3ebffe;
-  --lightGreen: #92d4c5;
-  --white: #fffcf8;
-  --darkAccent: #519888;
-}
+@import "config.scss";
 
 body {
-  background-color: var(--white);
-  /* max-width: 1440px; */
-  /*max-height: 4174px; */
+  background-color: $white;
   padding: 0;
   margin: 0;
 }
@@ -24,7 +17,7 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: var(--white);
+  color: $white;
   font-size: 5vw;
   max-width: fit-content;
 
@@ -34,7 +27,7 @@ h1 {
 
 nav {
   font-family: "Barlow", sans-serif;
-  color: hsl(0, 0%, 100%);
+  color: $brightWhite;
   padding: 1rem;
 }
 
@@ -43,6 +36,10 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding-right: 2rem;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .navbar-link {
@@ -50,19 +47,15 @@ nav {
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 18px;
+
+  a {
+    text-decoration: none;
+    color: $brightWhite;
+  }
 }
 
 .hamburger {
   display: none;
-}
-
-.navbar-link a {
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
-}
-
-.navbar li {
-  list-style-type: none;
 }
 
 #contact-btn {
@@ -70,16 +63,16 @@ nav {
   font-family: "Fraunces", serif;
   list-style: none;
   text-transform: uppercase;
-  background: white;
+  background: $brightWhite;
   padding: 1rem 2rem;
   border-radius: 2rem;
   list-style-type: none;
   border: none;
-}
 
-#contact-btn:hover {
-  background: #6eceff;
-  color: white;
+  &:hover {
+    background: $lightBlue;
+    color: $brightWhite;
+  }
 }
 
 .arrow {
@@ -96,7 +89,7 @@ h2 {
 h3 {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  color: hsl(210, 4%, 67%);
+  color: $darkGray;
   font-size: 18px;
 }
 
@@ -105,79 +98,78 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 3rem;
-}
 
-.learn a {
-  color: #222;
-  text-decoration: none;
+  a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .yellow-accent {
   display: inline-block;
   position: relative;
-}
 
-.yellow-accent::after {
-  z-index: -2;
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 10px;
-  bottom: 1.25rem;
-  left: -0.5rem;
-  background-color: hsl(51, 100%, 49%);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-in-out;
-  border-radius: 2rem;
-  padding: 0 0.5rem;
-}
+  &::after {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 1.25rem;
+    left: -0.5rem;
+    background-color: $yellow;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 2rem;
+    padding: 0 0.5rem;
+  }
 
-.yellow-accent:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 .pink-accent {
   display: inline-block;
   position: relative;
-}
 
-.pink-accent::after {
-  z-index: -2;
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 10px;
-  bottom: 1.25rem;
-  left: -0.5rem;
-  background-color: hsl(7, 99%, 70%);
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-in-out;
-  border-radius: 2rem;
-  padding: 0 0.5rem;
-}
+  &::after {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 1.25rem;
+    left: -0.5rem;
+    background-color: $pinkHover;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 2rem;
+    padding: 0 0.5rem;
+  }
 
-.pink-accent:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 .graphic-text {
-  color: hsl(167, 40%, 24%);
+  color: $graphicGreen;
 }
 
 .photo-text {
-  color: hsl(198, 62%, 26%);
+  color: $photoGreen;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr auto auto auto auto auto;
-  /* grid-template-columns: repeat(2, 1fr) */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #square1 {
@@ -191,10 +183,10 @@ h3 {
   display: flex;
   width: 25%;
   position: absolute;
-}
 
-.top-logo img {
-  padding: 2rem;
+  img {
+    padding: 2rem;
+  }
 }
 
 .transform-text {
@@ -202,13 +194,12 @@ h3 {
   margin: 6rem;
   margin-top: 12rem;
   line-height: 1.75rem;
-  /* color: hsl(232, 10%, 55%); */
-}
 
-.transform-text h2 {
-  font-size: 36px;
-  margin-right: 9rem;
-  line-height: 2.5rem;
+  h2 {
+    font-size: 36px;
+    margin-right: 9rem;
+    line-height: 2.5rem;
+  }
 }
 
 .standout-text {
@@ -216,12 +207,12 @@ h3 {
   margin: 6rem;
   margin-top: 12rem;
   line-height: 1.75rem;
-}
 
-.standout-text h2 {
-  font-size: 36px;
-  margin-right: 4rem;
-  line-height: 2.5rem;
+  h2 {
+    font-size: 36px;
+    margin-right: 4rem;
+    line-height: 2.5rem;
+  }
 }
 
 #egg {
@@ -237,13 +228,14 @@ h3 {
 #cherry {
   background: url(../assets/desktop/image-graphic-design.jpg) center;
   background-size: cover;
-}
 
-#cherry h2 {
-  color: hsl(167, 40%, 24%);
+  h2 {
+    color: $graphicGreen;
+  }
 }
 
 .cherry-text {
+  /* use a mixin here */
   text-align: center;
   margin-top: 26rem;
   margin-left: 8rem;
@@ -255,10 +247,10 @@ h3 {
 #peach {
   background: url(../assets/desktop/image-photography.jpg) center top;
   background-size: cover;
-}
 
-#peach h2 {
-  color: hsl(198, 62%, 26%);
+  h2 {
+    color: $photoGreen;
+  }
 }
 
 .peach-text {
@@ -272,15 +264,14 @@ h3 {
 
 #testimonials {
   grid-column: 1 / 3;
-}
 
-#testimonials h2 {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: hsl(210, 4%, 67%);
-
-  margin-top: 9rem;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $darkGray;
+    margin-top: 9rem;
+  }
 }
 
 .testimony {
@@ -288,11 +279,12 @@ h3 {
   padding: 4rem;
   text-align: center;
   line-height: 1.5rem;
-}
-.testimony img {
-  border-radius: 6rem;
-  width: 30%;
-  height: auto;
+
+  img {
+    border-radius: 6rem;
+    width: 30%;
+    height: auto;
+  }
 }
 
 .testimonial-container {
@@ -304,7 +296,7 @@ h3 {
 .testi-text {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  color: hsl(213, 9%, 39%);
+  color: $darkestGray;
 }
 
 .testi-name {
@@ -315,27 +307,26 @@ h3 {
 .testi-job {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  color: hsl(210, 4%, 67%);
+  color: $darkGray;
 }
 
 .photo-container1 {
   display: flex;
   grid-row-start: 6;
   grid-column: 1 / 2;
-  /* height: 100%; */
   width: auto;
 }
 
 .photo-container2 {
   grid-row-start: 7;
   display: flex;
-  height: 100%; /*warps image slightly temporary bug fix */
+  height: 100%;
   width: auto;
 }
 
 #bottom-menu {
   grid-column: 1 / 3;
-  background-color: var(--lightGreen);
+  background-color: $lightGreen;
 }
 
 .links {
@@ -343,25 +334,25 @@ h3 {
   font-size: 18px;
   display: flex;
   justify-content: center;
-}
 
-.links p {
-  color: var(--darkAccent);
-  margin: 1rem;
-}
+  p {
+    color: $darkAccent;
+    margin: 1rem;
+  }
 
-.links a {
-  padding: 1rem;
-  text-decoration: none;
-  color: hsl(168, 34%, 41%);
-}
+  a {
+    padding: 1rem;
+    text-decoration: none;
+    color: $graphicGreen;
 
-.links a:hover {
-  color: white;
+    &:hover {
+      color: $brightWhite;
+    }
+  }
 }
 
 footer {
-  background-color: var(--lightGreen);
+  background-color: $lightGreen;
 }
 
 .bot-logo {
@@ -369,21 +360,18 @@ footer {
   justify-content: center;
   padding-bottom: 2rem;
   padding-top: 5rem;
-}
 
-.bot-logo img {
-  width: 15%;
+  img {
+    width: 15%;
+  }
 }
 
 img {
-  /*
-      z-index: -1;
-      object-fit: cover;
-      */
   width: 100%;
   max-width: 720px;
   height: auto;
 }
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -391,37 +379,39 @@ img {
   z-index: 3;
   position: relative;
   align-items: center;
-}
-.social-media img {
-  margin-top: 4rem;
-  padding: 1rem;
-  width: 2%;
-  height: auto;
+
+  img {
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 2%;
+    height: auto;
+  }
 }
 
 .social-icon {
-  fill: #2c7566;
+  fill: $darkGreen;
   padding: 1rem;
-}
 
-.social-icon:hover {
-  fill: #fff;
+  &:hover {
+    fill: $brightWhite;
+  }
 }
 
 .attribution {
   font-family: "Barlow", serif;
   font-size: 14px;
-  background: hsl(198, 62%, 26%);
-  color: white;
+  background: $darkestGreen;
+  color: $brightWhite;
   text-align: center;
-}
 
-.attribution a {
-  text-decoration: none;
-  color: rgb(189, 188, 188);
-}
-.attribution a:hover {
-  color: hsl(168, 34%, 41%);
+  a {
+    text-decoration: none;
+    color: $lightGray;
+
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 @media (max-width: 1080px) {
@@ -438,6 +428,7 @@ img {
   #square1 {
     height: 100vh;
   }
+
   #egg {
     grid-row: 2;
     max-height: 650px;
@@ -485,6 +476,7 @@ img {
   .navbar-div {
     width: 100%;
   }
+
   .navbar {
     /* display: none; */
     position: absolute;
@@ -503,7 +495,7 @@ img {
   }
 
   .navbar li a {
-    color: hsl(210, 4%, 67%);
+    color: $darkGray;
   }
 
   .navbar-links {
@@ -520,7 +512,7 @@ img {
 
   .navbar-link ul {
     width: 100%;
-    background: white;
+    background: $brightWhite;
   }
 
   .navbar-links.active {
@@ -528,7 +520,7 @@ img {
   }
 
   #contact-btn {
-    background: hsl(51, 100%, 49%);
+    background: $yellow;
   }
 
   h1 {
@@ -560,17 +552,16 @@ img {
     background: url(../assets/mobile/image-transform.jpg) center;
     background-size: cover;
     width: 100vw;
-    /* height: auto; */
   }
 
   .transform-text {
     font-size: 8vw;
     margin: 1.25rem;
-  }
 
-  .transform-text h2 {
-    font-size: 8vw;
-    padding-top: 1.5rem;
+    h2 {
+      font-size: 8vw;
+      padding-top: 1.5rem;
+    }
   }
 
   .learn {
@@ -581,11 +572,11 @@ img {
     text-align: center;
     font-size: 8vw;
     margin: 1.25rem;
-  }
 
-  .standout-text h2 {
-    margin-right: 0;
-    padding-top: 1.5rem;
+    h2 {
+      margin-right: 0;
+      padding-top: 1.5rem;
+    }
   }
 
   #pinkcup {
@@ -603,10 +594,10 @@ img {
     margin: 0.75rem;
     margin-top: 18rem;
     padding-bottom: 2rem;
-  }
 
-  .cherry-text h3 {
-    font-size: 4vw;
+    h3 {
+      font-size: 4vw;
+    }
   }
 
   #peach {
@@ -619,10 +610,10 @@ img {
     margin: 1rem;
     margin-top: 18rem;
     padding-bottom: 2rem;
-  }
 
-  .peach-text h3 {
-    font-size: 4vw;
+    h3 {
+      font-size: 4vw;
+    }
   }
 
   .square {
