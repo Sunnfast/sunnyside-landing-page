@@ -476,6 +476,9 @@ img {
     top: 1rem;
   }
 
+  .navbar-div {
+    width: 100%;
+  }
   .navbar {
     /* display: none; */
     position: absolute;
@@ -484,7 +487,9 @@ img {
     width: 70%;
     background-color: white;
     align-items: center;
-    right: 2rem;
+    margin-right: 1rem;
+    right: 1rem;
+    /* left: 1rem; */
   }
 
   .navbar li {
@@ -496,8 +501,11 @@ img {
   }
 
   .navbar-links {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     display: none;
+    width: 100%;
   }
 
   .navbar-link li {
@@ -521,6 +529,7 @@ img {
     padding-top: 8rem;
     font-size: 10vw;
     padding-bottom: 4rem;
+    top: 0rem;
   }
 
   .top-logo img {
@@ -529,7 +538,9 @@ img {
 
   .arrow {
     margin-top: 0;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
+    width: 100%;
+    padding-top: 3rem;
   }
 
   #square1 {
