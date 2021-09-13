@@ -29,11 +29,11 @@ Users should be able to:
 Taken on September 13, 2021.
 
 Desktop
-![Screenshot: Desktop](/assets/desktop-screenshot.png)
+![Screenshot: Desktop](dist/assets/desktop-screenshot.png)
 
 Mobile
 
-![Screenshot: Mobile](/assets/mobile-screenshot.png)
+![Screenshot: Mobile](dist/assets/mobile-screenshot.png)
 
 ## My process
 
