@@ -269,7 +269,6 @@ h3 {
 }
 
 .cherry-text {
-  /* use a mixin here */
   text-align: center;
   margin-top: 26rem;
   margin-left: 8rem;
@@ -544,7 +543,6 @@ img {
     width: 100%;
   }
   .navbar {
-    /* display: none; */
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -558,7 +556,6 @@ img {
             align-items: center;
     margin-right: 1rem;
     right: 1rem;
-    /* left: 1rem; */
   }
   .navbar li {
     padding: 1rem;
