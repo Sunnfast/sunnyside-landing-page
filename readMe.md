@@ -55,7 +55,24 @@ The testimonials section, for instance, at first worried me because I knew I wan
 Additionally, I retroactivley added Sass to this project when it was near completion to help reinforce Sass concepts I learned recently. While going forward I will likely use Sass from the start, I found it to be a good learning experience to return to an older codebase and convert it.
 
 ```
-insert code snippet here
+@mixin colorTextBlock {
+  text-align: center;
+  margin-top: 26rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 4rem;
+  line-height: 1.75rem;
+}
+
+.cherry-text {
+  @include colorTextBlock;
+}
+
+...
+
+.peach-text {
+  @include colorTextBlock;
+}
 ```
 
 ### Continued development
